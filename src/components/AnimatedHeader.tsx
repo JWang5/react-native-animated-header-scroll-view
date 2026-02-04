@@ -50,18 +50,7 @@ export const AnimatedHeader = ({
               {HeaderComponent}
             </AnimatedImageBackground>
           ) : (
-            <Animated.View
-              style={[
-                { height: imageHeight, width: width * 1.2 },
-                {
-                  transform: [
-                    { scale },
-                    { translateY: translateYUp },
-                    { translateY: translateYDown },
-                  ],
-                },
-              ]}
-            >
+            <Animated.View style={[{ height: imageHeight, width: width }]}>
               {HeaderComponent}
             </Animated.View>
           )}
